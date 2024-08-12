@@ -72,8 +72,8 @@ class User extends Database
 
     public function getUser()
     {
-        $id = $_SESSION['id'];
-
+        $id = $_SESSION['id']; 
+        // this is a test
         $sql = "SELECT * FROM users WHERE id =$id";
 
         if ($result = $this->conn->query($sql)) {
